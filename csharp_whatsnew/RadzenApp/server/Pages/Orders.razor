@@ -1,0 +1,20 @@
+﻿@page "/"
+@page "/orders"
+@layout MainLayout
+@inherits RadzenApp.Pages.OrdersComponent
+
+@using Radzen
+@using Radzen.Blazor
+@using RadzenApp.Models.PizzaShop
+<RadzenContent Container="main">
+  <ChildContent>
+    <RadzenHeading Size="H1" Text="Orders">
+    </RadzenHeading>
+    <RadzenGrid @ref="grid0" Data="@(orders)" TItem="RadzenApp.Models.PizzaShop.Order">
+      <Columns>
+        <RadzenGridColumn TItem="RadzenApp.Models.PizzaShop.Order" Context="radzenAppModelsPizzaShopOrder" Property="name" Title="Name" Type="string">
+        </RadzenGridColumn>
+      </Columns>
+    </RadzenGrid>
+  </ChildContent>
+</RadzenContent>

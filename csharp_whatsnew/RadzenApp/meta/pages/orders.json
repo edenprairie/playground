@@ -1,0 +1,48 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "name": "pageTitle",
+          "size": "H1",
+          "text": "Orders",
+          "type": "heading"
+        },
+        {
+          "columns": [
+            {
+              "format": "",
+              "property": "name",
+              "title": "Name",
+              "type": "string"
+            }
+          ],
+          "data": "${orders}",
+          "itemType": "RadzenApp.Models.PizzaShop.Order",
+          "name": "grid0",
+          "type": "grid"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "events": {
+    "load": [
+      {
+        "name": "PizzaShop.getOrders",
+        "then": [
+          {
+            "name": "orders",
+            "type": "set",
+            "value": "${result}"
+          }
+        ],
+        "type": "invoke"
+      }
+    ]
+  },
+  "layout": "Main",
+  "name": "Orders"
+}

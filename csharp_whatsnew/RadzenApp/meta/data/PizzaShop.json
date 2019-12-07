@@ -1,0 +1,53 @@
+{
+  "basePath": "/",
+  "definitions": {
+    "Order": {
+      "properties": {
+        "createdAt": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "pizzaFlavor": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "float"
+        },
+        "trackingNumber": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "host": "localhost:3000",
+  "info": {
+    "title": "PizzaShop",
+    "x-withCredentials": false,
+    "x-type": "rest"
+  },
+  "paths": {
+    "orders": {
+      "get": {
+        "operationId": "getOrders",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Order"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemes": [
+    "http"
+  ]
+}

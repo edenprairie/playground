@@ -1,0 +1,24 @@
+{
+  "dataSources": [
+    "PizzaShop"
+  ],
+  "generator": "@radzen/blazor-server",
+  "https": false,
+  "layouts": [
+    "Login",
+    "Main"
+  ],
+  "logo": "",
+  "name": "RadzenApp",
+  "navigation": [
+    "Orders"
+  ],
+  "pages": [
+    "Orders"
+  ],
+  "serverLang": "cs",
+  "serverProject": true,
+  "serverVersion": "3",
+  "startPage": "Orders",
+  "theme": "default"
+}

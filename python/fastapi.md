@@ -1,5 +1,5 @@
-https://fastapi.tiangolo.com/features/
-https://github.com/Redocly/create-openapi-repo#generator-openapi-repo--
+https://fastapi.tiangolo.com/features/  
+https://github.com/Redocly/create-openapi-repo#generator-openapi-repo--  
 也就近几年的事。2014年初龟叔在湾区搞了个asyncio的讲座，那时候还在做。紧接着
 实验性质的异步库在3.4的时候首次发布，同时搞了个backport给2.7的trollius。进化
 得比较完备的时候是2016年底的3.6了，从那时候开始到现在asyncio真正开始发力

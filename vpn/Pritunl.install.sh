@@ -1,3 +1,6 @@
+#!/bin/bash
+#Ubuntu 18.04 LTS
+
 sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list << EOF
 deb https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse
 EOF

@@ -4,6 +4,11 @@ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/you
 sudo chmod a+rx /usr/local/bin/youtube-dl
 ```
 
+## Download and merge audio and video
+```
+youtube-dl -f 137+140 --ffmpeg-location C:\ffmpeg\bin\ https://www.youtube.com/watch?v=pAM2GBCDGTo&t=668s
+```
+
 Download from https://github.com/ytdl-org/youtube-dl
 run following command 
 ```

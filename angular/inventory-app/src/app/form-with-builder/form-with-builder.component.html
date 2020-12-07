@@ -1,0 +1,16 @@
+<div class="ui raised segment">
+    <h2 class="ui header">Form with Builder</h2>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form" [class.red]="!myForm.valid && myForm.touched">
+        <div class="field" [class.red]="!myForm.valid && myForm.touched">
+            <label for="skuInput2">SKU</label>
+            <input type="text" id="skuInput2" placeholder="SKU" [formControl]="skuControl">
+            <div *ngIf="!skuControl.valid" class="ui red message"> SKU is not valid</div>
+            <div *ngIf="skuControl.hasError('required')" class="ui red message"> SKU is required</div>
+            <div *ngIf="skuControl.hasError('invalidSku')" class="ui red message"> SKU should begin with <b>123</b></div>
+        </div>
+
+        <button type="submit" class="ui button">submit</button>
+    </form>
+    
+</div>
+

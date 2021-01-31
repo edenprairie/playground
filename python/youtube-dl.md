@@ -21,9 +21,18 @@ sudo chmod ugo+x /usr/local/bin/ffmpeg
 ```
 
 ## Download and merge audio and video
+
+On Windows
 ```
 youtube-dl -f 137+140 --ffmpeg-location C:\ffmpeg\bin\ https://www.youtube.com/watch?v=pAM2GBCDGTo&t=668s
 ```
+
+On MacOS
+```
+youtube-dl -F https://www.youtube.com/watch?v=bUHFg8CZFws
+youtube-dl -f 137+140 --ffmpeg-location /usr/local/bin/ffmpeg https://www.youtube.com/watch?v=bUHFg8CZFws
+```
+If you see pop up say “ffmpeg” cannot be opened because the developer cannot be verified.". Go to /usr/local/bin/ directory and right click on ffmpeg and choose open. After open once, this warning will not appear anymore. 
 
 Download from https://github.com/ytdl-org/youtube-dl
 run following command 

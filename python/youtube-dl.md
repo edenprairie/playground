@@ -1,6 +1,25 @@
 ## Install ffmpeg
 https://ffmpeg.org/download.html
 
+On MacOS
+Download from https://evermeet.cx/ffmpeg/ and unzip. 
+then run following command to install ffmpeg
+
+Now, if you use Bash (which is the default shell), add it to your $PATH:
+```
+open -e ~/.bash_profile
+```
+Add this to the file at the end:
+```
+export PATH="/usr/local/bin:$PATH"
+```
+Save it, and close the editor. Now restart your Terminal and which ffmpeg should return /usr/local/bin/ffmpeg.
+
+```
+sudo cp ./ffmpeg /usr/local/bin
+sudo chmod ugo+x /usr/local/bin/ffmpeg
+```
+
 ## Download and merge audio and video
 ```
 youtube-dl -f 137+140 --ffmpeg-location C:\ffmpeg\bin\ https://www.youtube.com/watch?v=pAM2GBCDGTo&t=668s
